@@ -1,30 +1,29 @@
 # Template Studio
 
-Questa cartella contiene il catalogo dei template e il progetto Fernly.
+Catalogo dei template frontend e applicazione Coterie.
 
 ```text
-Template/
-├── index.html       # landing/catalogo
+Templates/
+├── index.html       # catalogo e preview
 ├── styles.css
 ├── script.js
-└── template1/       # app Next.js Fernly
+└── Coterie/         # app Next.js Coterie
 ```
 
 ## Avvio locale
 
-In un terminale avvia il template:
+Avvia l'app Coterie sulla porta 3001:
 
 ```bash
-cd /home/eliana/Scrivania/Template/template1
+cd Coterie
 pnpm install
-pnpm dev
+pnpm dev -p 3001
 ```
 
-Poi, in un secondo terminale, avvia la landing:
+In un secondo terminale, dalla cartella `Templates`, avvia il catalogo:
 
 ```bash
-cd /home/eliana/Scrivania/Template
 python3 -m http.server 3000
 ```
 
-Apri [http://localhost:3000](http://localhost:3000). Cliccando la card Fernly si apre una preview live dell’app in `template1`.
+Apri [http://localhost:3000](http://localhost:3000) e usa la preview Coterie.

@@ -8,7 +8,7 @@ Templates/
 ├── styles.css
 ├── script.js
 ├── template1/       # progetto originale della collezione, invariato
-└── Coterie/         # app Next.js Coterie
+└── coterie/         # app Next.js Coterie
 ```
 
 ## Avvio locale
@@ -16,7 +16,7 @@ Templates/
 Avvia l'app Coterie sulla porta 3001:
 
 ```bash
-cd Coterie
+cd coterie
 pnpm install
 pnpm dev -p 3001
 ```

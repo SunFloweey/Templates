@@ -7,6 +7,7 @@ Templates/
 ├── index.html       # catalogo e preview
 ├── styles.css
 ├── script.js
+├── template1/       # progetto originale della collezione, invariato
 └── Coterie/         # app Next.js Coterie
 ```
 

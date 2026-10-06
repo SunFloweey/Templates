@@ -1,6 +1,6 @@
 const modal = document.querySelector("[data-modal]");
 const frame = document.querySelector("[data-preview-frame]");
-const templateUrl = "http://localhost:3001/#dashboard";
+const templateUrl = "http://localhost:3001/#overview";
 
 function openPreview() {
   frame.src = templateUrl;

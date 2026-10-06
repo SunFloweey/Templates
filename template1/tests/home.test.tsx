@@ -2,27 +2,24 @@ import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import Home from "../app/page";
 
-describe("Fernly workspace", () => {
-  it("creates a project from the dashboard modal", async () => {
-    window.location.hash = "#dashboard";
+describe("Coterie workspace", () => {
+  it("toggles onboarding tasks and updates the completion percentage", async () => {
+    window.location.hash = "#overview";
     render(<Home />);
 
-    fireEvent.click(screen.getByRole("button", { name: "Add Project" }));
-    fireEvent.change(screen.getByLabelText("Project name"), { target: { value: "Research Portal" } });
-    fireEvent.click(screen.getByRole("button", { name: "Add project" }));
+    expect(screen.getByText("25%")).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /Tax and bank forms/i }));
 
-    expect(await screen.findByText("Research Portal")).toBeInTheDocument();
-    expect(screen.getByRole("status")).toHaveTextContent("Research Portal was added to projects.");
+    await waitFor(() => expect(screen.getByText("38%")).toBeInTheDocument());
   });
 
-  it("filters tasks from the global search field", async () => {
-    window.location.hash = "#tasks";
+  it("filters people from the People view search field", async () => {
+    window.location.hash = "#people";
     render(<Home />);
 
-    const search = screen.getByPlaceholderText("Search tasks");
-    fireEvent.change(search, { target: { value: "Passkey" } });
+    fireEvent.change(screen.getByLabelText("Search people"), { target: { value: "payroll" } });
 
-    await waitFor(() => expect(screen.getByText("Passkey sign-in")).toBeInTheDocument());
-    expect(screen.queryByText("Saved filters for projects")).not.toBeInTheDocument();
+    await waitFor(() => expect(screen.getAllByText("Nadia Reyes").length).toBeGreaterThan(0));
+    expect(screen.queryByText("Mira Okafor")).not.toBeInTheDocument();
   });
 });

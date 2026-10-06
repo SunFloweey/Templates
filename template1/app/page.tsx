@@ -169,7 +169,7 @@ export default function Home() {
 
             <div className="bento">
               <article className="card profile-card motion-card tilt">
-                <img className="profile-photo" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=85" alt="Mira Okafor smiling by a studio window" />
+                <img className="profile-photo" src="https://images.unsplash.com/photo-1660794258264-89a5272269b5?auto=format&fit=crop&w=900&q=85" alt="Mira Okafor smiling by a studio window" />
                 <div className="profile-meta">
                   <span><strong>Mira Okafor</strong><small>Product Designer</small></span>
                   <b>$4,850</b>

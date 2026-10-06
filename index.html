@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Catalogo dei template frontend di SunFloweey." />
+    <title>Template Studio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header">
+      <a class="brand" href="./">
+        <span class="brand-mark">T</span>
+        <span>Template Studio</span>
+      </a>
+      <span class="header-note">Frontend experiments</span>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow"><span></span> Collezione privata</div>
+        <h1>Un punto di partenza<br /><em>per ogni interfaccia.</em></h1>
+        <p class="hero-copy">
+          Esplora le preview dei template disponibili e apri direttamente quello
+          che vuoi provare.
+        </p>
+      </section>
+
+      <section class="template-section" aria-labelledby="template-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">01 / Dashboard</p>
+            <h2 id="template-title">Fernly Workspace</h2>
+          </div>
+          <span class="status-pill"><i></i> Disponibile</span>
+        </div>
+
+        <article class="template-card">
+          <button class="preview-trigger" type="button" data-open-preview aria-label="Apri la preview di Fernly Workspace">
+            <div class="preview-window">
+              <div class="preview-topbar">
+                <div class="traffic-lights"><i></i><i></i><i></i></div>
+                <div class="preview-address">localhost:3001 / dashboard</div>
+                <div class="preview-actions"><b></b><b></b><b></b></div>
+              </div>
+              <div class="preview-body">
+                <aside class="preview-sidebar">
+                  <div class="preview-logo"><span>F</span> fernly</div>
+                  <small>WORKSPACE</small>
+                  <div class="preview-nav active"><span>⌂</span> Dashboard</div>
+                  <div class="preview-nav"><span>✓</span> Tasks</div>
+                  <div class="preview-nav"><span>◷</span> Calendar</div>
+                  <div class="preview-nav"><span>⌁</span> Analytics</div>
+                  <small class="preview-nav-label">MANAGE</small>
+                  <div class="preview-nav"><span>♙</span> Team</div>
+                  <div class="preview-nav"><span>⚙</span> Settings</div>
+                </aside>
+                <div class="preview-main">
+                  <div class="preview-heading">
+                    <div><span class="preview-muted">Tuesday, October 6, 2026</span><strong>Good morning, Alex <span>✦</span></strong></div>
+                    <div class="preview-avatar">AM</div>
+                  </div>
+                  <div class="preview-stat-grid">
+                    <div class="preview-stat"><span>Active projects</span><strong>12</strong><em>+2.4%</em></div>
+                    <div class="preview-stat"><span>Open tasks</span><strong>28</strong><em>+8.1%</em></div>
+                    <div class="preview-stat"><span>Team members</span><strong>16</strong><em>+4.3%</em></div>
+                    <div class="preview-stat"><span>Hours tracked</span><strong>142</strong><em>+12.6%</em></div>
+                  </div>
+                  <div class="preview-content-grid">
+                    <div class="preview-panel chart-panel"><div class="panel-title">Project overview <small>Last 30 days</small></div><div class="fake-chart"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div></div>
+                    <div class="preview-panel progress-panel"><div class="panel-title">Today's progress</div><div class="fake-ring"><span>68%</span></div><small>Great progress today</small></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="preview-overlay"><span>Apri preview</span><b>↗</b></span>
+          </button>
+
+          <div class="template-info">
+            <div>
+              <div class="template-meta"><span class="template-number">01</span><span>Next.js · TypeScript · GSAP</span></div>
+              <h3>Una dashboard SaaS completa per gestire progetti, task e team.</h3>
+              <p>Interfaccia responsive con animazioni, grafici, calendario, drag &amp; drop, modali, ricerca globale e scorciatoie da tastiera.</p>
+            </div>
+            <div class="template-actions">
+              <button class="primary-button" type="button" data-open-preview>Visualizza template <span>↗</span></button>
+              <a class="text-link" href="http://localhost:3001/#dashboard">Apri direttamente <span>→</span></a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>Template Studio</span><span>Built for frontend exploration</span></footer>
+
+    <div class="modal" data-modal aria-hidden="true">
+      <div class="modal-backdrop" data-close-preview></div>
+      <section class="preview-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-header">
+          <div><p class="section-kicker">Live preview</p><h2 id="modal-title">Fernly Workspace</h2></div>
+          <button class="close-button" type="button" data-close-preview aria-label="Chiudi preview">×</button>
+        </div>
+        <div class="iframe-wrap"><iframe title="Preview Fernly Workspace" data-preview-frame></iframe></div>
+        <div class="modal-footer"><span>La preview usa il progetto contenuto in <code>template1</code>.</span><a class="primary-button small" href="http://localhost:3001/#dashboard">Apri in una nuova pagina ↗</a></div>
+      </section>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

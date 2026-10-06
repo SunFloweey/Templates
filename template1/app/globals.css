@@ -11,3 +11,5 @@
 .modal-backdrop{animation:backdrop-in .25s ease both}.modal{animation:dialog-in .36s var(--ease) both}.panel-backdrop{animation:backdrop-in .25s ease both}.profile-panel{animation:panel-in .42s var(--ease) both}
 .segmented:not(.has-pill) button.selected{animation:filter-pop .3s var(--ease) both}@keyframes filter-pop{from{transform:scale(.94)}to{transform:scale(1)}}
 .segmented:not(.has-pill){position:relative;isolation:isolate}.segmented:not(.has-pill)::before{content:"";position:absolute;z-index:0;top:5px;bottom:5px;left:0;width:var(--pill-width,0px);border-radius:999px;background:linear-gradient(180deg,var(--g-700),var(--g-950));transform:translateX(var(--pill-x,0px));transition:transform .42s var(--ease),width .42s var(--ease);pointer-events:none}.segmented:not(.has-pill) button{position:relative;z-index:1}.segmented:not(.has-pill) button.selected{background:transparent;color:white}
+@media(min-width:1025px){.app-shell{gap:12px}.sidebar{padding:22px 0 18px}.topbar{height:70px;padding:10px 14px}main{margin-top:12px;padding:22px 20px 16px}}
+@media(min-width:1025px){.page-header{margin-bottom:18px}}

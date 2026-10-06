@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Libreria di componenti frontend indipendenti." />
+    <title>Componenti | Template Studio</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./componenti.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark">T</span>
+        <span>Template Studio</span>
+      </a>
+      <nav class="site-nav" aria-label="Navigazione principale">
+        <a href="./index.html">Template</a>
+        <a href="./componenti.html" aria-current="page">Componenti</a>
+      </nav>
+    </header>
+
+    <main class="components-main">
+      <section class="components-hero">
+        <div class="eyebrow"><span></span> Libreria privata</div>
+        <h1>Componenti<br /><em>indipendenti.</em></h1>
+        <p class="hero-copy">Una raccolta di elementi frontend autonomi, ciascuno con la propria pagina e pronto da copiare.</p>
+      </section>
+
+      <section class="components-library" aria-labelledby="components-title">
+        <header class="components-heading">
+          <div>
+            <p class="section-kicker">Libreria</p>
+            <h2 id="components-title">Componenti disponibili</h2>
+          </div>
+          <span class="components-count">0 componenti</span>
+        </header>
+        <div class="components-empty">
+          <span class="empty-mark" aria-hidden="true">+</span>
+          <h3>La raccolta comincia qui</h3>
+          <p>Ogni componente verrà aggiunto come elemento autonomo.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>Template Studio</span><a href="./index.html">Torna ai template <span>→</span></a></footer>
+  </body>
+</html>

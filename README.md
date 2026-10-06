@@ -5,6 +5,8 @@ Catalogo dei template frontend e applicazione Coterie.
 ```text
 Templates/
 ├── index.html       # catalogo e preview
+├── componenti.html  # libreria dei componenti
+├── componenti.css
 ├── styles.css
 ├── script.js
 ├── template1/       # progetto originale della collezione, invariato
